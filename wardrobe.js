@@ -8,7 +8,7 @@ let clothes = ''
 
 console.log('Alexa, what will the weather be like and what do you advise me for clothes to wear ?')
 
-while (!is20KmAstFall) { // condition false "chute d'un astéroide de 20 km"
+while (!is20KmAstFall) { // condition false "chute d'un astéroide de 20 km de diametre"
   // condition true "pluie"
   if (isRainy) {
     weather = 'rainy'
@@ -42,8 +42,8 @@ while (!is20KmAstFall) { // condition false "chute d'un astéroide de 20 km"
   console.log(`The weather is ` + `${weather}` + `. I recommend that you wear: ${clothes}`)
   break
 }
-// condition true "chute d'un astéroide de 20 km"
+// condition true "chute d'un astéroide de 20 km de diametre"
 while (is20KmAstFall) {
-  console.log('An asteroid with a size of 20 Km will crash into Earth. I recommend you to go to another planet, if you have a spaceship, of course. Otherwise, you are doomed !')
+  console.log('An asteroid with a size of 20 Km will crash into Earth in 30 mn. I recommend you to go to another planet, if you have a spaceship, of course. Otherwise, you are doomed !')
   break
 }
