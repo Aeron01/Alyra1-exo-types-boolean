@@ -1,10 +1,10 @@
-let isRainy = false
+let isRainy = true
 let isWindy = true
-let isHail = false
+let isHail = true
 let is20KmAstFall = false
-let temperature = 10
+let temperature = 0
 let weather = ''
-let clothes = ''
+let clothes = 'an t-shirt, an underpants '
 
 console.log('Alexa, what will the weather be like and what do you advise me for clothes to wear ?')
 
@@ -20,17 +20,20 @@ while (!is20KmAstFall) { // condition false "chute d'un astéroide de 20 km de d
     clothes += 'an windbreaker, '
   }
   if (temperature < 15) {
-    clothes += 'an coat, '
+    clothes += 'an pants, '
+    clothes += 'an coat. '
   } else if (temperature >= 15 && temperature <= 20) {
-    clothes += 'an sweater, '
+    clothes += 'an pants, '
+    clothes += 'an sweater. '
   } else if (temperature >= 20 && temperature <= 35) {
     clothes += 'an Tank top, '
+    clothes += 'an short. '
   } else if (temperature >= 38 && temperature <= 50) {
     clothes += 'Nothing, but a 50+ protective cream is essential to not look like a grilled sausage, '
   } else if (temperature >= 50 && temperature <= 100) {
-    clothes += 'an thermal protection suit, '
+    clothes += 'an thermal protection suit. '
   } else {
-    clothes += 'an t-shirt, '
+    clothes += 'and well, a pants. '
   }
 
   // condition true "grêle"
