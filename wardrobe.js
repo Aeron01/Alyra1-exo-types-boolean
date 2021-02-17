@@ -19,11 +19,12 @@ while (!is20KmAstFall) { // condition false "chute d'un astéroide de 20 km de d
     weather = 'windy'
     clothes += 'an windbreaker, '
   }
-  if (temperature < 15) {
+  if (temperature <= 15 && temperature <= 20) {
     clothes += 'an pants, '
+  }
+  if (temperature < 15) {
     clothes += 'an coat. '
   } else if (temperature >= 15 && temperature <= 20) {
-    clothes += 'an pants, '
     clothes += 'an sweater. '
   } else if (temperature >= 20 && temperature <= 35) {
     clothes += 'an Tank top, '
